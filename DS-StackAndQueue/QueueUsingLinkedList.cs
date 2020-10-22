@@ -23,6 +23,7 @@ namespace DS_StackAndQueue
                 }
                 n.next = node;
             }
+            Console.WriteLine(node.data + " inserted into Queue");
         }
         public void Display()
         {
