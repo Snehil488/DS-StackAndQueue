@@ -21,6 +21,29 @@ namespace DS_StackAndQueue
             }
             Console.WriteLine(node.data + " pushed to Stack");
         }
+        public void Pop()
+        {
+            if(top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+            }
+            else
+            {
+                Console.WriteLine(top.data+" popped from Stack");
+                top = top.next;
+            }
+        }
+        public void Peek()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+            }
+            else
+            {
+                Console.WriteLine(top.data + " is at top of Stack");
+            }
+        }
         public void Display()
         {
             if (top == null)
@@ -37,6 +60,15 @@ namespace DS_StackAndQueue
                 }
                 Console.Write(n.data + "\n");
             }
+        }
+        public void IsEmpty()
+        {
+            while(top != null)
+            {
+                Peek();
+                Pop();
+            }
+            Console.WriteLine("Stack is empty now.");
         }
 
     }
