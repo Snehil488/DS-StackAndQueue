@@ -19,6 +19,7 @@ namespace DS_StackAndQueue
                 node.next = top;
                 top = node;
             }
+            Console.WriteLine(node.data + " pushed to Stack");
         }
         public void Display()
         {
@@ -37,5 +38,6 @@ namespace DS_StackAndQueue
                 Console.Write(n.data + "\n");
             }
         }
+
     }
 }
