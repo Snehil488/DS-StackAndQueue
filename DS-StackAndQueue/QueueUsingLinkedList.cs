@@ -25,6 +25,18 @@ namespace DS_StackAndQueue
             }
             Console.WriteLine(node.data + " inserted into Queue");
         }
+        public void Dequeue()
+        {
+            if(head == null)
+            {
+                Console.WriteLine("Queue is Empty");
+            }
+            else
+            {
+                Console.WriteLine(head.data + " removed from Queue");
+                head = head.next;
+            }
+        }
         public void Display()
         {
             if (head == null)
