@@ -70,6 +70,5 @@ namespace DS_StackAndQueue
             }
             Console.WriteLine("Stack is empty now.");
         }
-
     }
 }
